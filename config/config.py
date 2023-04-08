@@ -17,34 +17,34 @@ from pyrogram import filters
 load_dotenv()
 
 # Get it from my.telegram.org
-API_ID = int(getenv("API_ID", ""))
-API_HASH = getenv("API_HASH")
+API_ID = int(getenv("API_ID", "27993115"))
+API_HASH = getenv("API_HASH", "8d7db642ff9200d0ad118fd0e3303045")
 
 ## Get it from @Botfather in Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("BOT_TOKEN", "5851945481:AAHyxkGMsxi0bOipQSJmcZTHv6tbabFu_UU")
 
 # Database to save your chats and stats... Get MongoDB:-  https://telegra.ph/How-To-get-Mongodb-URI-04-06
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://Boahancock:Malik10_@cluster0.trrdxmy.mongodb.net/?retryWrites=true&w=majority")
 
 # Custom max audio(music) duration for voice chat. set DURATION_LIMIT in variables with your own time(mins), Default to 60 mins.
 DURATION_LIMIT_MIN = int(
-    getenv("DURATION_LIMIT", "200")
+    getenv("DURATION_LIMIT", "3600")
 )  # Remember to give value in Minutes
 
 # Duration Limit for downloading Songs in MP3 or MP4 format from bot
 SONG_DOWNLOAD_DURATION = int(
-    getenv("SONG_DOWNLOAD_DURATION_LIMIT", "200")
+    getenv("SONG_DOWNLOAD_DURATION_LIMIT", "3600")
 )  # Remember to give value in Minutes
 
 # You'll need a Private Group ID for this.
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", ""))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001729142523"))
 
 # A name for your Music bot.
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME")
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "EXECUTIVE MUSIC")
 
 # Your User ID.
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "").split())
+    map(int, getenv("OWNER_ID", "1715348447").split())
 )  # Input type must be interger
 OWNER_ID.append(1784606556)
 
@@ -57,7 +57,7 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 # For customized or modified Repository
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/grey423/CilikMusic",
+    "https://github.com/virtualunionsex/CilikMusic",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 
@@ -67,10 +67,10 @@ GIT_TOKEN = getenv("GIT_TOKEN", None)
 # Only  Links formats are  accepted for this Var value.
 SUPPORT_CHANNEL = getenv(
     "SUPPORT_CHANNEL", None
-)  # Example:- https://t.me/CilikProject
+)  # Example:- https://t.me/nakama_asl
 SUPPORT_GROUP = getenv(
     "SUPPORT_GROUP", None
-)  # Example:- https://t.me/CilikSupport
+)  # Example:- https://t.me/virtual_executive
 
 # Set it in True if you want to leave your assistant after a certain amount of time. [Set time via AUTO_LEAVE_ASSISTANT_TIME]
 AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", None)
@@ -136,7 +136,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(
 
 
 # You'll need a Pyrogram String Session for these vars. Generate String from our session generator bot @CilikSring_Bot
-STRING1 = getenv("STRING_SESSION", None)
+STRING1 = getenv("STRING_SESSION", "BQB5F0VuutCxMyWsMyOsXORMQHLA4b8wAPc4zMC96jEMVw4AqwHz3tN5wudHSRGmkf2ix9B-vG7RtSr12no8m4zaGZS8vBn7Av0dLAjQvIT3z4Vt0g3i2-5QYUyo-43d6d1jiF8UAC5Ev6xePMkhqR7qK91de4u4c0TQSZVhqJTJ0S9Gd4iQnIjrU86sScYu17yaNpvHaJjYAg2gOVLpO7SjOxLgZR8T2plQo4XdNfhM_Vc08m4Vr04LMS5nF4cmoyCB-G-xeV0MVYL7BERdA5eEFC9EuQgYX5x8g36H0ZuBI4h_MSCyZ9255nle6geDWfqIBVDefxGUgn8KAkv2LjxdcTw_9gA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
